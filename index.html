@@ -3,26 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Présentation</title>
+    <title>des photos de shrek</title>
+    <style>
+        .title {
+            color: blue;
+            font-size: 32px;
+            transition: transform 1s ease;
+        }
+
+        .title:hover {
+            color: green;
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+
+        #bouton {
+            display: block;
+            margin: 20px auto;
+        }
+
+        #texte {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 18px;
+            color: green;
+        }
+
+        /* Styles pour le zoom des images */
+        img {
+            transition: transform 0.5s ease;
+        }
+
+        img:hover {
+            transform: scale(1.5); /* Zoom à 150% */
+        }
+    </style>
+    <script>
+        let isGreen = true;
+
+        function changeTextColor() {
+            const elements = document.querySelectorAll("p");
+            elements.forEach(element => {
+                element.style.color = isGreen ? "blue" : "green";
+            });
+            isGreen = !isGreen;
+        }
+    </script>
 </head>
 <body>
-    <p> subscribe to <strong>III_baba</strong> on yt</p>
+    <button id="bouton" onclick="changeTextColor()">Cliquez-moi</button>
+    <div id="texte">écriture verte</div>
+    
+    <p class="title" onclick="alert('salut')">subscribe to <strong>III_baba</strong> on yt</p>
+    <p class="title">idk</p>
+    <p>shrek shockbar</p>
+    <img src="https://www.pngplay.com/wp-content/uploads/12/Shrek-Meme-No-Background.png" alt="shrek très choquer">
+    <p>shrek meme</p>
+    <img src="https://i.kym-cdn.com/photos/images/facebook/001/590/564/aff.jpg" alt="Meme Shrek">
+    <p>shrek sans texture</p>
+    <img src="https://th.bing.com/th/id/R.a185c8a903621dce031fd5b6cf61b75a?rik=ytXxJGj16uTMyw&pid=ImgRaw&r=0" alt="Image Description">
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Présentation</title>
-</head>
-<body>
-    <p>idk</p>
-<p>      shrek shockbar</p>
-    <img src="https://www.pngplay.com/wp-content/uploads/12/Shrek-Meme-No-Background.png" alt="shrek très choquer">
-</body>
-<p>      shrek meme</p>
-</html><img src="https://i.kym-cdn.com/photos/images/facebook/001/590/564/aff.jpg" alt="Meme Shrek">
-<p>      shrek sans texture</p>
-</html><img src="https://th.bing.com/th/id/R.a185c8a903621dce031fd5b6cf61b75a?rik=ytXxJGj16uTMyw&pid=ImgRaw&r=0" alt="Image Description">
-
